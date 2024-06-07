@@ -1,0 +1,26 @@
+/*Contenido de archivo externo CSS llamado css_ejemplo17.css*/
+/*Observamos el uso del selector con pseudo-clase, con el selector "a:status"*/
+/* Estilo para el link sin visitar.*/
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    /* Estilo para el link visitado*/
+    a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    /* Estilo cuando el mouse pasa sobre el link*/
+    a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    /* Estilo para el link activo al dar clic*/
+    a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    }

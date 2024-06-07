@@ -1,0 +1,25 @@
+h2 {
+    text-align: center;
+    }
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /* Ancho que ocupa la tabla respecto a la pantalla */
+    width: 80%;
+    /* Centrar la tabla definiendo los márgenes en auto*/
+    margin-left: auto;
+    margin-right: auto;
+    }
+    tr {
+    border-bottom: 1px solid #ddd;
+    }
+    td, th {
+    /*Espaciado interno*/
+    padding: 8px;
+    /*Alineación de texto dentro de la celda de datos*/
+    text-align: left;
+    }
+    /*Color de fondo para los encabezados*/
+    th {background-color: rgb(209, 0, 63);}
+    /*Cambiar color de fondo al pasar el mouse sobre la fila, excepto encabezados*/
+    tr:hover:not(th) {background-color: #D6EEEE;}

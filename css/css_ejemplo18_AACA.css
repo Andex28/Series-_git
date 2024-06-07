@@ -1,0 +1,33 @@
+/*Contenido de archivo externo CSS llamado css_ejemplo18.css*/
+/*Observamos el uso del selector con #identificador y .clase*/
+/* Aplicar estilos a una clase city, indicado con un punto*/
+.city {
+background-color: palegoldenrod;
+color: brown;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+/* Aplicar estilos a una clase note, indicado con un punto*/
+.note {
+font-size: 120%;
+color: red;
+}
+/* Aplicar estilos a una clase main, indicado con un punto*/
+.main {
+text-align: center;
+}
+/* Aplicar estilos a un elemento HTML por su id, indicado con un #*/
+#idPais {
+background-color: palevioletred;
+color: whitesmoke;
+border: 2px solid green;
+margin: 20px;
+padding: 20px;
+}
+/* Aplicar estilos a un elemento HTML por su id, indicado con un #*/
+#idCd {
+font-size: 36px;
+color: mediumseagreen;
+text-align: right;
+}

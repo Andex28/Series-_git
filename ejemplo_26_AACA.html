@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de uso de formularios</title></head>
+
+<body>
+    <!-- Ejemplo de formulario simple-->
+    <h3>Formulario simple de captura de datos personales</h3>
+    <div style="border: 2px solid; padding: 20px;">
+        <form action="procesa_datos_post.php" method="post">
+            <!-- El elemento <label> define una etiqueta para
+el elemento <input> -->
+            <label for="txtNombre">Nombre(s): </label>
+            <br>
+            <!-- Elemento <input> tipo campo de texto. El atributo id
+sirve para manipular localmente el elemento con JS y el
+atributo name sirve para enviar el dato capturado al backend
+-->
+            <input type="text" id="txtNombre" name="fNombre" maxlength="10" size="12">
+            <br><br>
+            <label for="txtApellidoPat">Apellido paterno: </label>
+            <br>
+            <input type="text" id="txtApellidoPat" name="fApellidoPat" autofocus required>
+            <br><br>
+            <label for="txtApellidoMat">Apellido materno: </label>
+            <br>
+            <input type="text" id="txtApellidoMat" name="fApellidoMat">
+            <!-- Elemento <input> tipo radiobutton.
+Son elementos excluyentes, donde solo podemos seleccionar una
+opción.
+El grupo de radiobuttons deben tener el mismo atributo name.
+-->
+            <p>Selecciona tu lenguaje web favorito:</p>
+            <input type="radio" id="rHTML" name="rLengFav" value="HTML" checked>
+            <label for="rHTML">HTML</label><br>
+            <input type="radio" id="rCSS" name="rLengFav" value="CSS">
+            <label for="rCSS">CSS</label><br>
+            <input type="radio" id="rJS" name="rLengFav" value="JS">
+            <label for="rJS">JavaScript</label>
+            <!--Elemento <input> tipo checkbox, permiten seleccionar
+    más de una opción.
+    Cada opción es un elemento independiente con su propio
+    atributo name.
+-->
+            <p>Selecciona tus lenguajes de script favoritos:</p>
+            <input type="checkbox" id="cbLS1" name="cbLengS1" value="PHP">
+            <label for="cbLS1"> Php </label><br>
+            <input type="checkbox" id="cbLS2" name="cbLengS2" value="ASP">
+            <label for="cbLS2"> ASP </label><br>
+            <input type="checkbox" id="cbLS3" name="cbLengS3" value="Java">
+            <label for="cbLS3"> Java </label>
+            <br><br>
+            <!-- Elemento <input> tipo submit. Sirve para enviar el
+formulario-->
+
+            <!-- El elemento <select> define una lista de selección -->
+            <label for="sltCars">Selecciona una marca de carro:</label>
+            <select id="sltCars" name="sltCars">
+                <option value="Volvo">Marca Volvo</option>
+                <option value="Saab">Marca Saab</option>
+                <option value="Fiat">Marca Fiat</option>
+                <option value="Audi">Marca Audi</option>
+            </select>
+
+            <!-- El elemento <textarea> define un campo de texto multilínea.
+Se le puede definir el número de filas (rows) y columnas (cols) como
+tamaño de visualización.
+-->
+            <br><br>
+            <label for="direccion">Dirección:</label>
+            <br>
+            <textarea id="direccion" name="taDireccion" rows="5" cols="30">
+</textarea>
+            <!-- Otros elementos input-->
+            <!--input type="password"-->
+
+            <br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="txtPwd">
+
+            <!--input type="date".
+Se puede especificar una fecha mínima (min) y máxima (max).
+-->
+            <br><br>
+            <label for="fechaNac">Fecha de nacimiento:</label><br>
+            <input type="date" id="fechaNac" name="txtFechaNac" min="2000-01-01" max="2022-12-31">
+
+            <!--input type="datetime-local", permite seleccionar una fecha y hora-->
+            <br><br>
+            <label for="fechaHoraEvento">Fecha y hora del evento:</label><br>
+            <input type="datetime-local" id="fechaHoraEvento" name="txtFechaHoraEvento">
+
+            <!--input type="email", permite validar un formato de correo-->
+            <br><br>
+            <label for="txtCorreo">Correo electrónico:</label><br>
+            <input type="email" id="txtCorreo" name="txtCorreo">
+            <!--input type="file", permite ubicar y seleccionar un archivo-->
+            <br><br>
+            <label for="fileDocumento">Documento:</label><br>
+            <input type="file" id="fileDocumento" name="fileDocumento">
+            <!--input type="hidden", permite crear un elemento que no se visualiza en
+el form, pero que si se envía para procesamiento.
+-->
+            <input type="hidden" id="matricula" name="hMatricula" value="123456">
+            <!--input type="month", permite seleccionar un mes y año-->
+            <br><br>
+            <label for="txtMes">Mes y año:</label><br>
+            <input type="month" id="txtMes" name="txtMes">
+            <!--input type="number", permite un campo solo para números.
+Se puede definir un mínimo (atributo min) y un máximo (max).
+-->
+            <br><br>
+            <label for="txtCantidad">Cantidad:</label><br>
+            <input type="number" id="txtCantidad" name="txtCantidad" min="1" max="10">
+            <!--Usando el atributo readonly podemos definir un campo de solo lectura.
+-->
+            <br><br>
+            <label for="txtId">Identificador:</label><br>
+            <input type="text" id="txtId" name="txtId" value="54321" readonly>
+
+            <!--input type="range", permite un control entre un rango de números.
+Se puede definir un mínimo (atributo min) y un máximo (max).
+-->
+            <br><br>
+            <label for="txtEdad">Edad:</label><br>
+            <input type="range" id="txtEdad" name="txtEdad" min="20" max="40">
+            <!--input type="tel", permite definir una regla para validar un número de
+teléfono, usando el atributo pattern
+-->
+            <br><br>
+            <label for="txtTel">Teléfono:</label><br>
+            <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{2}-[0-
+9]{3}" placeholder="Ej. XXX-XX-XXX">
+            <!--input type="time", permite seleccionar una hora
+-->
+            <br><br>
+            <label for="txtHora">Hora:</label><br>
+            <input type="time" id="txtHora" name="txtHora">
+            <!--input type="week", permite seleccionar una semana y año
+-->
+            <br><br>
+            <label for="txtSemana">Semana y año:</label><br>
+            <input type="week" id="txtSemana" name="txtSemana">
+            <br><br>
+            
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>

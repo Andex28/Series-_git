@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>admisiones </title>
+    <link rel="icon" type="images/png" href="images/Imagen6.png">
+
+
+</head>
+<h1> Formulario de Aspirante ala UT </h1>
+
+<body >
+    <div style="border: 2px solid; padding: 20px;">
+        <form action="admidiones.php" method="get">
+
+        <h1> Informacion personal </h1>
+
+        <label for="txtNombre">Nombre(s): </label>
+        <input type="text" id="txtNombre" name="fNombre" maxlength="15" size="16" required>
+        <br><br>
+
+        <label for="txtApellidoPat">Apellido paterno: </label>
+        <input type="text" id="txtApellidoPat" name="fApellidoPat" required>
+        <br><br>
+
+        <label for="txtApellidoMat">Apellido materno: </label>
+        <input type="text" id="txtApellidoMat" name="fApellidoMat" required>
+        <br><br>
+        
+        <label for="txtApellidoMat">curp:  </label>
+        <input type="text" id="txtCurp" name="fCurp" required>
+        <br><br>
+        
+        <h1>Informacion Escolar </h1>
+
+        <P>Escriba la carrera deseada </P>
+        <label for="txtCarrera1">Carrera selecionada: </label>
+        <input type="text" id="txtCarera1" name="fCarrera1" required>
+        <br><br>
+        <p>En caso de no esta disponible su primer opcion escriba su segunda opción </p>
+        <label for="txtCarrera2">Carrera (opcional): </label>
+        <input type="text" id="txtCarrera2" name="fCarrera2" required>
+        <br> <br>
+         <input type="submit" value="Enviar">
+
+    </div>
+</body>
+
+</html>

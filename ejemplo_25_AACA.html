@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de uso de formulario con GET</title>
+    <link rel="icon" type="images/png" href="images/Imagen6.png">
+</head>
+
+<body>
+    <!-- Ejemplo de formulario simple-->
+    <h3>Formulario simple de captura de datos personales</h3>
+    <div style="border: 2px solid; padding: 20px;">
+        <form action="procesa_datos_get.php" method="get">
+            <!-- El elemento <label> define una etiqueta para
+            el elemento <input> -->
+            <label for="txtNombre">Nombre(s): </label>
+            <br>
+            <!-- Elemento <input> tipo campo de texto. El atributo id
+            sirve para manipular localmente el elemento con JS y el
+            atributo name sirve para enviar el dato capturado al backend-->
+            
+            <input type="text" id="txtNombre" name="fNombre" maxlength="15" size="16" required>
+            <br><br>
+            <label for="txtApellidoPat">Apellido paterno: </label>
+            <br>
+            <input type="text" id="txtApellidoPat" name="fApellidoPat" required>
+            <br><br>
+            <label for="txtApellidoMat">Apellido materno: </label>
+            <br>
+            <input type="text" id="txtApellidoMat" name="fApellidoMat">
+            <br><br>
+            <input type="submit" value="Enviar">
+            <!--input type="reset", permite limpiar el formulario-->
+            <input type="reset" value="Cancelar"> 
+           
+    
+    </div>
+</body>
+
+</html>

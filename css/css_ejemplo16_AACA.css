@@ -1,0 +1,21 @@
+
+/* CSS aplicando por etiquta al cuerpo de la pagina  */
+body {background-color:beige;}
+h1 { /* CSS aplicado a todos los elementos h1 */
+background-color: tomato;
+color: white;
+font-family: 'verdana';
+font-size: 200%;
+}
+h2 { /* CSS aplicado a todos los elementos h2 */
+color:cadetblue;
+font-style: italic;
+text-align: center;
+}
+p {/* CSS aplicado a todos los elementos p */
+background-color: rgb(5, 211, 248);
+color: #f7049a;
+font-family: 'Courier New';
+font-size: 24px;
+font-weight: bold;
+}
